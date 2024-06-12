@@ -26,7 +26,7 @@ const OrderDetails = () => {
           <h1>Shipping</h1>
         
     <b>Address:</b>
-     {order.shippingInfo.hNo}
+    
       
         </div>    
         <div>
