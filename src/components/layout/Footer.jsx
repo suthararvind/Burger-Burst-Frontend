@@ -5,14 +5,14 @@ const Footer = () => {
   return (
     <footer>
       <div>
-        <h2>BTECH Burger Wala</h2>
+        <h2>Burger Mart</h2>
 
         <p>Here we will be providing you the best taste possible.</p>
         <br />
 
         <em>We give attention to genuine feedback.</em>
 
-        <strong>All right received @btechburgerwala</strong>
+        <strong>All right received @burgermart</strong>
       </div>
 
       <aside>
