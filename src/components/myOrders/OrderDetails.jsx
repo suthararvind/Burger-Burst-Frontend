@@ -8,7 +8,8 @@ const OrderDetails = () => {
  const params= useParams();
 
  const { order } = useSelector((state) => state.orders);
- //console.log(order.user.name);
+ console.log(order.user.name);
+ console.log("Data Test"); 
  
 
  const dispatch = useDispatch();
@@ -33,10 +34,10 @@ const OrderDetails = () => {
           <h1>Contact</h1>
           <p>
             <b>Name</b>
-            {order.user.name}
+           {"Arvind"}
           </p>
            <p> <b>Phone</b>
-           {order.shippingInfo.phoneNo}
+            {"data"}
           </p>
         </div>
 
@@ -44,11 +45,11 @@ const OrderDetails = () => {
           <h1>Status</h1>
           <p>
             <b>Order Status</b>
-            {order.orderStatus}
+           {"data"}
           </p>
           <p>
             <b>Placed At</b>
-            {order.createdAt}
+            
           </p>
           <p>
             <b>Delivered At</b>
@@ -60,7 +61,7 @@ const OrderDetails = () => {
           <h1>Payment</h1>
           <p>
             <b>Payment Method</b>
-            {order.paymentMethod}
+           {"data"}
           </p>
           <p>
             <b>Payment Reference</b>
@@ -74,16 +75,16 @@ const OrderDetails = () => {
         <div>
           <h1>Amount</h1>
           <p>
-            <b>Items Total</b>₹{order.itemsPrice}
+            <b>Items Total</b>₹{"data"}
           </p>
           <p>
-            <b>Shipping Charges</b>₹{order.shippingCharges}
+            <b>Shipping Charges</b>₹{"data"}
           </p>
           <p>
-            <b>Tax</b>₹{order.taxPrice}
+            <b>Tax</b>₹{"data"}
           </p>
           <p>
-            <b>Total Amount</b>₹{order.totalAmount}
+            <b>Total Amount</b>₹{"data"}
           </p>
         </div>
 
@@ -92,22 +93,22 @@ const OrderDetails = () => {
           <div>
             <h4>Cheese Burger</h4>
             <div>
-            <span>{order.orderItems.vegCheeseBurger.quantity}</span> x{" "}
-            <span>{order.orderItems.vegCheeseBurger.price}</span>
+            <span> {"x} </span> x{" "}
+            <span>{"y"}</span>
             </div>
           </div>
           <div>
             <h4>Veg Cheese Burger</h4>
             <div>
-            <span>{order.orderItems.vegCheeseBurger.quantity}</span> x{" "}
-            <span>{order.orderItems.vegCheeseBurger.price}</span>
+            <span>{"z"}</span> x{" "}
+            <span>{"z1"}</span>
             </div>
           </div>
           <div>
             <h4>Burger Fries</h4>
             <div>
-            <span>{order.orderItems.burgerWithFries.quantity}</span> x{" "}
-            <span>{order.orderItems.burgerWithFries.price}</span>
+            <span>{"z2"}</span> x{" "}
+            <span>{"z3"}</span>
             </div>
           </div>
 
@@ -124,7 +125,7 @@ const OrderDetails = () => {
                 fontWeight: 800,
               }}
             >
-              ₹{order.itemsPrice}
+              ₹{"data"}
             </div>
           </div>
         </article>
