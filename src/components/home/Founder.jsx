@@ -20,7 +20,7 @@ const Founder = () => {
         <h3>ARVIND SUTHAR</h3>
 
         <p>
-          Hey, Everyone I am Arvind Suthar, the founder of BTECH Burger Wala.
+          Hey, Everyone I am Arvind Suthar, the founder of Burger Mart.
           <br />
           Our aim is to create the most tasty burger for the people of India.
         </p>
