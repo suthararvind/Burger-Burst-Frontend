@@ -9,7 +9,6 @@ const OrderDetails = () => {
   const params = useParams();
 
   const { order, loading } = useSelector((state) => state.orders);
- console.log(order.user.name);
  console.log("DATA loaded");
 
   const dispatch = useDispatch();
