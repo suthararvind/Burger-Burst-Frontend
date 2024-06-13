@@ -34,7 +34,7 @@ const OrderDetails = () => {
           <h1>Contact</h1>
           <p>
             <b>Name</b>
-           {"Arvind"}
+           {"Arvind kumar"}
           </p>
            <p> <b>Phone</b>
             {"data"}
