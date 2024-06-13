@@ -2,13 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Doughnut } from "react-chartjs-2";
 import { Chart as ChartJS, Tooltip, ArcElement, Legend } from "chart.js";
-import { getAdminStats } from "../../redux/actions/admin";
+import Loader from "../layout/Loader";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
+import { getAdminStats } from "../../redux/actions/admin";
 
 ChartJS.register(Tooltip, ArcElement, Legend);
-
-
 
 const Box = ({ title, value }) => (
   <div>
@@ -22,7 +21,7 @@ const Box = ({ title, value }) => (
 
 const Dashboard = () => {
   const dispatch = useDispatch();
-  const { usersCount, ordersCount, totalIncome } = useSelector(
+  const { loading, usersCount, ordersCount, totalIncome } = useSelector(
     (state) => state.admin
   );
 
@@ -30,16 +29,14 @@ const Dashboard = () => {
     dispatch(getAdminStats());
   }, [dispatch]);
 
- //graph data
   const data = {
     labels: ["Preparing", "Shipped", "Delivered"],
-    //it is a array 
-      datasets: [
+    datasets: [
       {
         label: "# of orders",
-        data:[1,2,3],
-      //  [ordersCount.preparing, ordersCount.shipped, ordersCount.delivered],
-      
+        data: ordersCount
+          ? [ordersCount.preparing, ordersCount.shipped, ordersCount.delivered]
+          : [0, 0, 0],
         backgroundColor: [
           "rgba(159,63,176,0.1)",
           "rgba(78,63,176,0.2)",
@@ -53,11 +50,11 @@ const Dashboard = () => {
 
   return (
     <section className="dashboard">
-      
+      {loading === false ? (
         <main>
           <article>
             <Box title="Users" value={usersCount} />
-            <Box title="Orders" value={555} /> 
+            <Box title="Orders" value={ordersCount.total} />
             <Box title="Income" value={totalIncome} />
           </article>
 
@@ -73,8 +70,8 @@ const Dashboard = () => {
           </section>
         </main>
       ) : (
-       
-      )
+        <Loader />
+      )}
     </section>
   );
 };
