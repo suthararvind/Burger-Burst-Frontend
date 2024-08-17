@@ -11,10 +11,9 @@ const About = () => {
         <h1>About Us</h1>
 
         <article>
-          <h4>BTECH Burger Wala</h4>
+          <h4>Burger Mart</h4>
           <p  >
-            We are BTECH Burger Wala. The place for most tasty burgers on the
-            enitre earth.
+            We are from the team of Burger Mart. The place for most tasty burgers in India.
           </p>
 
           <p>
@@ -36,7 +35,7 @@ const About = () => {
             </div>
 
             <p>
-              I am Arvind Suthar, the founder of BTECH Burger Wala. Affiliated to
+              I am Arvind Kumar Suthar, the founder of Burger Mart. Affiliated to
               God Taste...
             </p>
           </article>
