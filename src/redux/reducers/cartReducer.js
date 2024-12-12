@@ -36,7 +36,7 @@ const initialState = {
 
 //initialState is defined above , data from shipping.jsx
 export const cartReducer = createReducer(initialState, {
-  cheeseBurgerIncrement: (state) => {
+ cheeseBurgerIncrement: (state) => {   //these are event handlers inko click krna pdta h components me
     state.cartItems.cheeseBurger.quantity += 1;
   },
   vegCheeseBurgerIncrement: (state) => {
