@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section className="about">
       <main>
-        <h1>About Us</h1>
+        <h1>About </h1>
 
         <article>
           <h4>Burger Mart</h4>
