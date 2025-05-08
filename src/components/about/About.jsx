@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { RiFindReplaceLine } from "react-icons/ri";
-import me from "../../assets/founder.webp";
+import me from "../../assets/profileburger.jpg  ";
 
 
 const About = () => {
@@ -31,12 +31,12 @@ const About = () => {
           <article>
             <div>
               <img src={me} alt="Founder" />
-              <h3>Arvind Suthar</h3>
+              <h3>Arvind Abhishek Harsh Mayank</h3>
             </div>
 
             <p>
-              I am Arvind Kumar Suthar, the founder of Burger Mart. Affiliated to
-              God Taste...
+              Burger Mart is where cravings meet craftsmanship — 
+              serving mouthwatering burgers made fresh, fast, and full of flavor to satisfy every appetite.
             </p>
           </article>
         </div>
