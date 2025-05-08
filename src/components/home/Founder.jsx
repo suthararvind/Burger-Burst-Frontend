@@ -16,7 +16,7 @@ const Founder = () => {
   return (
     <section className="founder">
       <motion.div {...options}>
-        <img src={me} alt="Founder" height={240} width={240} />
+        <img src={me} alt="Founder" height={280} width={280} />
         <h3>ARVIND, ABHISHEK, MAYANK, HARSH</h3>
 
         <p>
