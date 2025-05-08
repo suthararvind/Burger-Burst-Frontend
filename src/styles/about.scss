@@ -11,7 +11,7 @@
     margin: auto;
 
     > h1 {
-      font: 500 3rem "Roboto";
+      font: 500 3rem "";
       color: $red;
       padding: 1rem 2rem;
       text-transform: uppercase;
@@ -94,7 +94,7 @@
 @media screen and (max-width: 600px) {
   .about > main {
     > h1 {
-      font: 100 3rem "Roboto";
+      font: 100 4rem "";
       text-align: center;
     }
 
